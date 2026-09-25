@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "inter",  sans-serif; */
+}
+
+header,
+footer {
+  max-width: 1366px;
+  margin: auto;
+}
+
+nav{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    color: #C7C7C7;
+    
+}
+
+h1{
+    font-family: Bebas Neue;
+}
+
+a{
+    text-decoration: none;
+    color: #C7C7C7;
+    font-size: 18px;
+    font-weight: 38px;
+    line-height: 24px;
+    letter-spacing: -3%;
+    font-family: Inter;
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+    text-decoration: none;
+
+}
+li{
+    text-decoration: none;
+}
