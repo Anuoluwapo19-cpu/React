@@ -1,0 +1,219 @@
+.footer{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 90px 100px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+
+.left,
+.contactForm{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left h2 {
+    margin-top: 0;
+}
+
+.footer p {
+    color:#C7C7C7;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.footer h2 {
+    color: #FFFFFF;
+   font-weight: 600;
+   font-size: 76px; 
+   font-family: Bebas Neue;
+}
+
+.left a{
+    color: #ffffff;
+    border-bottom: 1px solid #D3E97A;
+}
+
+.icon{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contactForm {
+    /* background: white; */
+
+    padding: 0 35px;
+
+    border-radius: 15px;
+
+    /* box-shadow: 0 10px 35px rgba(24, 67, 100, 0.08); */
+}
+
+
+
+.inputGroup {
+    margin-bottom: 18px;
+}
+
+
+.inputGroup label {
+    display: block;
+
+    font-size: 17px;
+    font-weight: 44;
+
+    color: #FFFFFF;
+
+    margin-bottom: 7px;
+}
+
+
+
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border: 1px solid #484848;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.inputGroup input::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+input{
+    background-color: #484848;
+    color: #FFFFFF;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    border-color: #FFFFFF;
+}
+
+
+.inputGroup textarea {
+    resize: vertical;
+    background-color: #484848;
+   
+}
+
+
+.primaryBtn {
+    background-color: #D3E97A;
+
+    color: #0A0A0A;
+
+    border: none;
+
+    padding:10px 30px;
+
+    border-radius: 40px;
+
+    font-size: 14px;
+
+    font-weight: 60;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.primaryBtn:hover {
+    background: #D3E97A;
+}
+
+.below{
+    flex-basis: 100%;
+    width: 100%;
+    margin: 24px 0 0;
+    text-align: left;
+}
+
+@media (max-width: 1100px), (pointer: coarse) and (max-width: 1366px) {
+    .footer {
+        flex-direction: column;
+        gap: 32px;
+        padding: 72px clamp(32px, 6vw, 80px);
+    }
+
+    .left,
+    .contactForm {
+        width: 100%;
+    }
+
+    .contactForm {
+        padding: 0;
+    }
+
+    .footer .left p,
+    .inputGroup label {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .inputGroup input,
+    .inputGroup textarea {
+        font-size: 20px;
+    }
+
+    .primaryBtn {
+        font-size: 18px;
+    }
+
+    .below {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .icon {
+        flex-wrap: wrap;
+    }
+
+    .icon img {
+        max-width: 36px;
+        height: auto;
+    }
+
+    .inputGroup input,
+    .inputGroup textarea {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .footer {
+        padding: 48px 24px;
+    }
+
+    .below {
+        margin-top: 0;
+    }
+}
+
+
+

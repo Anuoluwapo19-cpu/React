@@ -1,46 +1,94 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: "inter",  sans-serif; */
-}
-
-header,
-footer {
-  max-width: 1366px;
-  margin: auto;
-}
-
-nav{
+.header {
+    position: relative;
+    z-index: 10;
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
     padding: 20px 30px;
-    color: #C7C7C7;
-    
+    color: #c7c7c7;
 }
 
-h1{
-    font-family: Bebas Neue;
+.brand h1 {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
 }
 
-a{
-    text-decoration: none;
-    color: #C7C7C7;
-    font-size: 18px;
-    font-weight: 38px;
-    line-height: 24px;
-    letter-spacing: -3%;
-    font-family: Inter;
-}
-
-ul{
+.navLinks {
     display: flex;
+    align-items: center;
     gap: 25px;
-    text-decoration: none;
-
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-li{
+
+.navLinks a {
+    color: #c7c7c7;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
     text-decoration: none;
+}
+
+.menuToggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: 1px solid #484848;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menuToggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 4px 0;
+    background: currentColor;
+}
+
+@media (max-width: 1100px), (pointer: coarse) and (max-width: 1366px) {
+    .header {
+        padding: 16px 24px;
+    }
+
+    .brand h1 {
+        font-size: 26px;
+    }
+
+    .menuToggle {
+        display: block;
+    }
+
+    .navLinks {
+        position: absolute;
+        top: 100%;
+        right: 24px;
+        left: 24px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px 16px;
+        border: 1px solid #484848;
+        background: #0a0a0a;
+    }
+
+    .navLinksOpen {
+        display: flex;
+    }
+
+    .navLinks li + li {
+        border-top: 1px solid #2a2a2a;
+    }
+
+    .navLinks a {
+        display: block;
+        padding: 14px 0;
+    }
 }

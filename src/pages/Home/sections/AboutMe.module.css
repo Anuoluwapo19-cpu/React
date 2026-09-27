@@ -1,0 +1,117 @@
+.aboutMe {
+    display: flex;
+    align-items: flex-start;
+    color: #fff;
+    font-family: Manrope;
+    padding: 90px 100px;
+    box-sizing: border-box;
+}
+
+.left,
+.right{
+    width: 50%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutMe h1 {
+    color: #FFFFFF;
+    font-weight: 307;
+    font-size: 91px;
+    margin-top: 0;
+}
+
+.aboutMe h3 {
+    font-weight: 704;
+    font-size: 30px;
+    color: #FFFFFF;
+    line-height: 40px;
+    margin-top: 0;
+}
+
+.aboutMe p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.aboutMe a{
+    color: #D3E97A;
+    border-bottom: 1px solid #D3E97A;
+    padding: 5px 0;
+    font-weight: 129;
+    font-size: 16px;
+}
+
+@media (max-width: 1100px), (pointer: coarse) and (max-width: 1366px) {
+    .aboutMe {
+        flex-direction: column;
+        gap: 24px;
+        padding: 72px clamp(32px, 6vw, 80px);
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .aboutMe h1 {
+        font-size: 76px;
+    }
+
+    .right h3 {
+        font-size: 30px;
+        line-height: 1.35;
+    }
+
+    .aboutMe p {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .aboutMe a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .aboutMe {
+        flex-direction: column;
+        gap: 24px;
+        padding: 56px 32px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .right h3 {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .aboutMe {
+        padding: 48px 24px;
+    }
+
+    .aboutMe h1 {
+        font-size: 48px;
+    }
+
+    .right h3 {
+        font-size: 23px;
+    }
+
+    .aboutMe p {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
